@@ -131,7 +131,39 @@ def tic_tac_toe():
     number_guessing_game()
     
     
+    def Rock_Paper_Scissors():   
+        import random
+        options = ["Rock", "Paper", "Scissors"]
+        user_choice = input("Choose Rock, Paper, or Scissors: ")
+        computer_choice = random.choice(options)
+        
+        print("You chose: ", user_choice)
+        print("Computer chose: ", computer_choice)
+        if user_choice == computer_choice:
+            print("It's a tie!")
+        
+        elif user_choice == "Rock" and computer_choice == "Scissors":
+            print("You win!")
+        
+        elif user_choice == "Paper" and computer_choice == "Rock":
+            print("You win!")
+        
+        elif user_choice == "Scissors" and computer_choice == "Paper":
+            print("You win!")
+        
+        else:
+            print("Computer wins!")
+        Rock_Paper_Scissors()
+
+
     
     
-    
-    
+        game_choice = input("Choose a game to play: Tic Tac Toe(1), Number Guessing Game(2), Or Rock Paper Scissors(3) ")
+        if game_choice == '1':
+            tic_tac_toe()
+        elif game_choice == '2':
+            number_guessing_game()
+        elif game_choice == '3':
+            Rock_Paper_Scissors()
+        else:
+            print("Invalid choice. Please select a valid game.")
