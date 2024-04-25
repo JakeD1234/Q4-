@@ -3,7 +3,6 @@ project for quarter 4
 My project will have a couple 2 or more player mini games such as hangman, tic tac toe, a number guessing games, rock paper scissors, and maybe even more
 
 def tic_tac_toe():
-
     def make_move(board, player):
       move = int(input("Enter a number from 0-8: "))
       if board[move]==' ':
@@ -157,13 +156,15 @@ def tic_tac_toe():
 
 
     
-    
-        game_choice = input("Choose a game to play: Tic Tac Toe(1), Number Guessing Game(2), Or Rock Paper Scissors(3) ")
-        if game_choice == '1':
+    def game_choice():
+        game = input("Choose a game to play: Tic Tac Toe(1), Number Guessing Game(2), Or Rock Paper Scissors(3) ")
+        if game == '1':
             tic_tac_toe()
-        elif game_choice == '2':
+        elif game == '2':
             number_guessing_game()
-        elif game_choice == '3':
+        elif game == '3':
             Rock_Paper_Scissors()
         else:
             print("Invalid choice. Please select a valid game.")
+
+    game_choice()
