@@ -16,3 +16,6 @@ def get_random_word_from_wordlist():
     return word
 
     This code will help me get started by getting a randm word from a seperate linked file for the user to guess in the hangman game
+
+
+5/13 i worked on my presentation
